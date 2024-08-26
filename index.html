@@ -256,17 +256,14 @@
             <h2 class="heading" id="contact-h21">מוכנים לקדם את העסק שלכם?</h2>
             <p id="contact-p">השאירו פרטים ונחזור אליכם בהקדם האפשרי</p><br/><br/>
 
-            <form onsubmit="sendEmail(event)">
+            <form action="https://formsubmit.co/danl3654321@gmail.com" method="POST">
                 <div class="input-box">
                     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                    <input type="text" id="fullname" placeholder="שם מלא" required>
-                    <div class="error-txt">Full Name can't be blank</div>
-                    <input type="email" id="email" placeholder="מייל" required>
-                    <div class="error-txt">Email can't be blank</div>
-                    <input type="number" id="phone" placeholder="טלפון" required>
-                    <div class="error-txt">Phone Number can't be blank</div>
-                    <textarea class="textarea" id="message" rows="8" placeholder="הודעה" required></textarea>
-                    <div class="error-txt">Massage can't be blank</div>
+                    <input type="text" name="fullname" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="מייל" required>
+                    <input type="number" name="phone" placeholder="טלפון" required>
+                    <textarea class="textarea" name="message" rows="8" placeholder="הודעה"></textarea>
+                    <input type="hidden" name="_next" value="https://thankyoufordetils.netlify.app/">
                 </div> 
                 <input type="submit" value="שליחה" class="btn" id="contact-btn">
             </form>
@@ -285,7 +282,9 @@
 
         <!--  TYPED JS  -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <!--  SCROLL REVEAL  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--  MAIN JS  -->
         <script src="JS/main.js"></script>

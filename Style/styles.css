@@ -430,19 +430,6 @@ span {
     margin-right: 34.3%;
 }
 
-.error-txt{
-    font-size: 14.5px;
-    color: #d93025;
-    text-align: left;
-    margin: -5px 0 10px;
-    display: none;
-}
-
-form .textarea .error-txt {
-    margin-top: -10px;
-
-}
-
 .tools {
     min-height: 200px;
     background: var(--snd-bg-color);

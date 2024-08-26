@@ -49,32 +49,3 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
-/*================================= form value send gmail ===================================*/
-
-const form = document.querySelector("form");
-const fullName = document.getElementById("fullName");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const message = document.getElementById("message");
-
-function sendEmail(e) {
-    const bodyMessage =   `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`
-
-    e.preventDefault();
-
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "danl3654321@gmail.com",
-        Password : "CE408F29370096BAD9BE326B43F0D0B35336",
-        To : "danl3654321@gmail.com",
-        From : email.value,
-        Subject : "This is the subject",
-        Body : bodyMessage
-    }).then(
-      message => alert(message)
-    );
-
-    return true;
-}
-
-
